@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  font-family: "Cascadia Mono", sans-serif;
+}
+
+  .bg {
+    --gap: 40px;
+    --size: 1.2px;
+    --color: color-mix(in srgb, #2e3f27, transparent 20%);;
+
+    background-image: radial-gradient(
+      var(--color) var(--size),
+      transparent var(--size)
+    );
+
+    background-size: var(--gap) var(--gap);
+  }
