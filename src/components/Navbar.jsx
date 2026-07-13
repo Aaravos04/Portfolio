@@ -7,12 +7,12 @@ const Navbar = () => {
   const [sidebarActive, setSidebarActive] = useState(false);
 
   return (
-    <div className="bg-black flex items-center justify-between px-8 sm:px-12 py-4">
+    <div className="flex items-center justify-between px-8 sm:px-12 py-4 lg:z-10">
       <div className="sm:px-12">
         <p className="text-2xl font-semibold">&gt; neelabhra</p>
       </div>
 
-      <ul className="hidden lg:flex items-center justify-center gap-12 px-12">
+      <ul className="hidden lg:flex items-center justify-center gap-8 xl:gap-12 px-12">
         <li className="font-semibold duration-350 ease-in-out">
           <a href="#home" className="hover:underline">
             .home()
@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
 
       <motion.div
-        className="w-screen h-screen bg-black absolute z-50 top-0"
+        className="w-screen h-screen bg bg-black absolute z-50 top-0"
         initial={{ left: "100%" }}
         animate={{ left: sidebarActive ? "0" : "100%" }}
         transition={{ duration: 0.4, ease: "easeInOut" }}

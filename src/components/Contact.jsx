@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/about.png";
+import image from "../assets/contact.png";
 
 const Contact = () => {
   return (
@@ -9,7 +9,9 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 pb-24">
-        <div className="aspect-square w-120 max-w-screen border"></div>
+        <div className="w-120 max-w-screen">
+          <img src={image} alt="" />
+        </div>
 
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-center gap-4">
