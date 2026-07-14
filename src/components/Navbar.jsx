@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { IoMenu } from "react-icons/io5";
 import { FaXmark } from "react-icons/fa6";
+import { FaTerminal } from "react-icons/fa;
 
 const Navbar = () => {
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-8 sm:px-12 py-4 lg:z-10">
       <div className="sm:px-12">
-        <p className="text-2xl font-semibold">&gt; neelabhra</p>
+        <p className="text-2xl font-semibold"><FaTerminal className="inline" /> neelabhra</p>
       </div>
 
       <ul className="hidden lg:flex items-center justify-center gap-8 xl:gap-12 px-12">
@@ -44,7 +45,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="sm:px-12 block lg:hidden">
+      <div className="sm:px-12 block lg:hidden z-50">
         <button
           className="text-3xl p-1"
           onClick={() => setSidebarActive((currentState) => !currentState)}
